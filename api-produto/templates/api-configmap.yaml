@@ -4,4 +4,4 @@ metadata:
   name: {{ .Release.Name }}-api-configmap
 data:
   Mongo_Host: {{ template "mongodb.serviceName" . }}
-  Mongo_Database: {{ .Values.mongodb.databaseName  }}
+  Mongo_Database: {{ .Values.mongodb.credentials.auth.database  }}
