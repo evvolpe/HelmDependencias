@@ -1,0 +1,1 @@
+Instalada a Release {{ .Release.Name }}

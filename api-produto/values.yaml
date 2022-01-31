@@ -1,0 +1,15 @@
+mongodb:
+  credentials:
+    auth:
+      rootPassword: mongoRoot
+      username: mongouser
+      password: mongopwd
+      database: produto
+    persistence:
+      enable: true
+
+api:
+  image: fabricioveronez/pedelogo-catalogo:latest
+  serviceType: ClusterIP
+  ingress:
+  - winterfoxit.com.br
